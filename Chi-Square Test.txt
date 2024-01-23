@@ -1,0 +1,7 @@
+from scipy.stats import chi2_contingency
+
+observed_data = [[30, 10], [20, 25]]
+chi2, p, _, _ = chi2_contingency(observed_data)
+
+print("Chi-Square Value:", chi2)
+print("P-value:", p)
